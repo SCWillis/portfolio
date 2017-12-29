@@ -1,0 +1,325 @@
+
+
+html
+{
+    margin:0px;
+    padding:0px;
+}
+
+
+body
+{
+	margin: 5% 5% 10% 5%;
+	/*background-image: url("mist.jpg");*/
+/*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(to bottom right, grey, black);*/
+    background: linear-gradient(to bottom right, black, tan);
+    /*background:radial-gradient(white, grey 15%, black 50%); //THIS IS THE ONE TO USE IF NEW STUFF FAILS*/
+    /*background:radial-gradient(#f7f4e3, grey 15%, black 50%);*/
+    background-size: 100% 100%;
+ 
+
+}
+
+.navbar
+{
+	/*background-color: #eee;*/
+	/*background-color: #014700;*/
+	/*background-color: #f7f4e3;*/
+
+	background:radial-gradient(black 0%, #012800 90%, #025600 99%);
+
+	opacity: 0.95;
+	/*position: fixed;*/
+	margin-right: 1%;
+	margin-left: 1%;
+	padding-top: 1%;
+	border-right:1em solid silver;
+	border-left:1em solid silver;
+	border-top: 0em;
+	border-bottom: 0em;
+}
+
+.navbar-brand
+{
+
+}
+
+
+#logo
+{
+	color:#147709;
+	/*padding-top:10%;*/
+	font-size: 4em;
+	font-family:"Lucida Console", Monaco, monospace;
+
+
+
+}
+
+
+.socialIcons i
+{
+ /*color: grey;*/
+ color:#147709;	
+}
+
+
+.jumbotron
+{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	opacity: 0.9;
+	/*border:0.3em solid silver;*/
+	/*border:0.3em solid grey;*/
+	background:radial-gradient(black 0%, #012800 90%, #025600 99%);
+
+}
+
+#jumboTitle
+{
+	color:#147709;
+	font-size:3em;
+	font-family:"Lucida Console", Monaco, monospace;
+	/*letter-spacing: 0.075em;*/
+	text-align:center;
+	text-shadow: 0px 4px 3px rgba(20, 135, 8, 0.4),
+				 0px 8px 13px rgba(20, 135, 8, 0.1),
+				 0px 18px 23px rgba(20, 135, 8, 0.1);
+}
+
+.jumboText
+{
+	color:#147709;
+	margin-left: 7%;
+	display:none;
+}
+
+#titleQuestion
+{
+	text-align: center;
+	background-color:#147709; 
+	border:none;
+	color:white;
+	margin-left: 25%;
+}
+
+.gameBar
+{
+	background-color: #eee;
+	padding: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	transition-property: height;
+	transition-property: width;
+	transition-duration: 0.5s;
+	height:11em;
+	width:25%;
+	opacity:0.95;
+	border-radius:6px;
+	/*border-right: 40px solid red;*/
+}
+
+/*.gameBar p
+{
+	overflow: hidden;
+	position: absolute;
+	padding:10%;
+}*/
+
+
+.tab
+{
+	position:relative;
+	float:right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color:white;
+	right:50px;
+}
+
+#game1, #game2, #game3, #game4
+{
+	margin-right:75%;
+	color:black;
+}
+
+
+.gameBar p .gameTitle
+{
+	margin:10px;
+}
+
+
+.gameSlide
+{
+	
+	float:right;
+	max-width: 200px;
+	max-height: 100px;
+	height:15%;
+	width:15%;
+}
+
+.slide1, .slide2, .slide3, .slide4
+{
+	/*display: none;*/
+}
+
+
+#game1Text, #game2Text, #game3Text, #game4Text
+{
+	opacity:0.0;
+	transition-property: opacity;
+	transition-delay: 0.1s;
+	transition-duration: 0.1s;
+	margin:0px;
+
+	position: absolute;
+	overflow: hidden;
+}
+
+/*#game2Text 
+{
+	opacity:0.0;
+	transition-property: opacity;
+	transition-delay: 0.1s;
+	transition-duration: 0.1s;
+
+	position: absolute;
+	overflow: hidden;
+}
+
+#game3Text 
+{
+	opacity:0.0;
+	transition-property: opacity;
+	transition-delay: 0.1s;
+	transition-duration: 0.1s;
+
+	position: absolute;
+	overflow: hidden;
+}
+
+#game4Text
+{
+	opacity:0.0;
+	transition-property: opacity;
+	transition-delay: 0.1s;
+	transition-duration: 0.1s;
+
+	position: absolute;
+	overflow: hidden;
+}*/
+
+
+/*Start of game slideshow code*/
+
+.gamebox
+{
+	margin-bottom:5%;
+}
+
+
+.gamebreak::before
+{ 
+	display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    opacity:0.9;
+}
+
+.gamebreak
+{
+	overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    opacity:0.5;
+}
+
+#gameImage
+{
+	height:auto;
+	width: 100%;
+	/*position:absolute;*/
+	border-radius: 2px 2px 2px 2px;
+	/*border:5px solid grey;*/
+	border:5px solid silver;
+}
+
+/*.gameImageCover
+{
+	top:1%;
+	bottom:0%;
+	right:0%;
+	left:2%;
+
+	position:absolute;
+	background:radial-gradient(black 0%, #012800 90%);
+	height:98%;
+	width:97.5%;
+	opacity: 0.6;
+}*/
+
+#left-img-button
+{
+float:left;
+position:absolute;
+top:40%;
+padding:1%;
+border-radius: 5px;
+font-size: 50px;
+}
+
+#right-img-button
+{
+float:right;
+position:absolute;
+top:40%;
+right:0%;
+padding:1%;
+border-radius: 5px;
+font-size: 50px;
+}
+
+#gameSlideText
+{
+	color:white;
+	float:left;
+	position:absolute;
+	top:90%;
+	padding:1%;
+	/*border:2px solid red;*/
+	background-color: rgba(0,0,0,0.8);
+
+}
+
+.sildeshow
+{
+	padding: 0%;
+}
+
+
+.slideshowBox
+{
+	float:right;
+	padding-right:0%;
+}
+
+.slideshowText
+{
+	color:white;
+	padding:0%;
+}
